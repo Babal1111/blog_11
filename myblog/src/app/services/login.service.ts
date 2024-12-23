@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class LoginService {
-  url = 'http://localhost:9000/login';
+  url = 'http://localhost:8000/login';
   constructor(private http: HttpClient) {}
   loginUser(data: any) {
     return this.http.post(this.url, data);

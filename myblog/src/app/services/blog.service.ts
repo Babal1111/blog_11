@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class BlogService {
-  private url = 'http://localhost:9000/createblog';
+  private url = 'http://localhost:8000/createblog';
 
   constructor(private http: HttpClient) {}
 

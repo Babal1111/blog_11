@@ -17,7 +17,7 @@ app.use(bodyParser.json()); // Parse JSON bodies
 app.use(cors()); // Enable CORS for all routes
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/myblog').then(() => {
+mongoose.connect('mongodb://localhost:27017').then(() => {
     console.log("Successfully connected to the database");
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...', err);
@@ -84,8 +84,8 @@ app.post('/register', (req, res) => {
 app.post('/createblog', (req, res) => {
     console.log("Create Blog API");
 
-    const { title, body } = req.body;
-    const author = "Vedant"; // Assuming the user's first name is available in the request object
+    const { title, body ,author} = req.body;
+  //  const author = "Babal"; // Assuming the user's first name is available in the request object
     
     // Check if title and body are provided
    //
@@ -145,7 +145,7 @@ app.post('/login', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 9000; // Set the port number
+const PORT = process.env.PORT || 8000; // Set the port number
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

@@ -1,18 +1,24 @@
-<nav class="navbar navbar-op navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-5 py-2">
   <div class="container-fluid">
-    <a class="navbar-brand myblog" href="/home" ><strong>myBlog</strong></a> <!-- Update the href attribute to "/" to refresh the page -->
+    <a class="navbar-brand" href="/home">BlogBug</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about" href="/about">About</a> <!-- Link to the About page -->
+          <a class="nav-link" routerLink="/about" href="/about">About</a>
         </li>
       </ul>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- Move the "Write" link to the right-hand side -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/writeblog" href="/writeblog">Write</a> <!-- Link to the Write page -->
+          <a class="nav-link rounded-pill" routerLink="/writeblog" href="/writeblog">Write blog</a>
+        </li>
+        <li class="nav-item">
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
         </li>
       </ul>
     </div>

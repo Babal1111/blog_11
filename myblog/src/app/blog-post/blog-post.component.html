@@ -1,13 +1,16 @@
 <div class="container px-5">  
-  <div class="row">
-    <div class="col-md-8">
+  <div class="row"  >
+    <div class="col-md-8" >
       <!-- Main content area -->
       <div *ngIf="blogs && blogs.length > 0">
-        <div class="card mb-3" *ngFor="let post of blogs" (click)="navigateToPost(post._id)">
+        <div class="card mb-3" *ngFor="let post of blogs" (click)="navigateToPost(post._id)" >
           <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="card-text">{{ post.body }}</p>
-            <p class="card-text">{{ post.date | date:'medium' }}</p>
+            <!-- <p class="card-text"><i>by: {{ post.author }}</i></p>
+            <p class="card-text"><i>{{  post.date | date:'medium' }}</i></p> -->
+
+            <p class="card-text"><i>by: {{ post.author }}</i><span style="margin-left: 5px;"></span><br><i>{{  post.date | date:'medium' }}</i></p>
             <!-- <button (click)="navigateToPost(post._id)">Open</button> -->
           </div>
         </div>

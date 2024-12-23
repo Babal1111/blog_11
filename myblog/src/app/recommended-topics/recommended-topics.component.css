@@ -1,0 +1,24 @@
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa; /* Change background color on hover */
+  }
+  #Recommended_Topics{
+    font-size: 24px; /* Adjust the font-size */
+    font-weight: bold;
+    color: #333; /* Adjust the color */
+    margin-bottom: 10px;
+  }
+  .list-group-item:hover {
+    background-color: #8c8e91; /* Change to desired hover background color */
+  }
+  
+#row1 {
+  transition: transform 0.3s ease;
+  padding: auto;
+  /* margin: 200px; */
+}
+
+#row1:hover {
+  transform: scale(1.1); /* Increase the scale on hover to 110% of the original size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FetchblogService {
-  private url = 'http://localhost:9000/blogs'; // Endpoint to fetch blogs
+  private url = 'http://localhost:8000/blogs'; // Endpoint to fetch blogs
   
 
   constructor(private http: HttpClient) {}
